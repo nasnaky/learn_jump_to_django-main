@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Hello, pybo!</title>
+</head>
+<body>
+{% include "navbar.html" %}
+<!--    템플릿 내용 시작   -->
+{% block content %}
+{% endblock %}
+<!--    템플릿 내용 끝    -->
+<!-- jquery js -->
+<script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+<!-- bootstrap js -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!--자바스크립트-->
+{% block script %}
+{% endblock %}
+</body>
+</html>
